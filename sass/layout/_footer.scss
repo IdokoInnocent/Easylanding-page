@@ -1,0 +1,90 @@
+// Footer Section
+
+.footer{
+    width: 100%;
+    background-color: $color-dark-blue;
+    padding: 1rem 5rem 1rem 15rem;
+
+    @include respond(tab-land){
+        padding: 3rem 1rem 1rem 1rem;
+    }
+
+    &__col{
+        flex-basis: 45%;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+
+
+        @include respond(tab-land){
+            text-align: center;
+            padding: 1rem 0 1rem;
+        }
+
+        &--u{
+            margin-left: -25rem;
+
+            @include respond(tab-land){
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+
+        img{
+            padding: 2rem .6rem;
+            color: white;
+            transition: .6s;
+
+            &:hover{
+                transform: scale(1.2);
+
+
+            }
+        }
+        ul{
+            display: block;
+            list-style: none;
+
+            li{
+                display: block;
+                padding: .8rem 1px;
+
+                @include respond(phone){
+                    padding: 1rem 0;
+                }
+                
+                a{
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: hsl(220, 16%, 96%);
+                    font-size: 1.5rem;
+                    transition: .8s;
+
+                    &:hover{
+                        color: $color-Lime-Green;
+                    }
+                }
+            }
+        }
+
+        span{
+            font-size: 1.5rem;
+            color: $color-grayish-blue;
+            margin-bottom: 4rem;
+            display: block;
+
+            @include respond(phone){
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+.row-4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-land){
+        flex-direction: column;
+    }
+}

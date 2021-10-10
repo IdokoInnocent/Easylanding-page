@@ -1,0 +1,52 @@
+.nav-btn{
+    padding: 1.3rem 3rem;
+    border: none;
+    border-style: none;
+    border-radius: 2.5rem;
+    text-transform: capitalize;
+    background: linear-gradient(to right, $color-Lime-Green, $color-Bright-Cyan);
+    transition: all .5s;
+
+    @include respond(tab-land){
+        display: none;
+    }
+
+
+    
+       
+    
+
+
+   
+
+    
+
+    &:hover{
+        opacity: .8;
+        cursor: pointer;
+    }
+
+
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: bolder;
+        font-size: 1.6rem;
+    }
+}
+
+.hero-btn{
+    @extend .nav-btn;
+    margin-top: 3.5rem;
+    display: block;
+
+    &--footer{
+    margin-bottom: 4rem;
+
+    }
+
+    @include respond(tab-land){
+        display: inline-block;
+        text-align: center;
+    }
+}

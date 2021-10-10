@@ -1,0 +1,80 @@
+.text-header{
+    font-size: 5rem;
+    font-weight: 400;
+    color: $color-dark-blue;
+    padding: 6rem 0 2rem;
+
+    @include respond(tab-land){
+        padding: 5rem 0 0 0;
+    }
+
+    
+}
+
+.text-paragraph{
+    color: $color-grayish-blue;
+    line-height: 30px;
+    margin-top: 2rem;
+
+    @include respond(phone){
+        line-height: 2rem;
+    }
+    
+        
+}
+
+.choose-paragraph{
+    @extend .text-paragraph;
+    padding-bottom: 5rem;
+    padding: 20px 80px 20px 6px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-top: -2rem;
+
+    @include respond(tab-land){
+        text-align: center;
+        padding: 20px 2px 20px 2px;
+    }
+
+    @include respond(phone){
+        padding: 10px 2rem 20px 2rem;
+        text-align: center;
+    }
+}
+
+.article-header{
+    @extend .text-header;
+    font-weight: 500;
+    padding: 3rem 0 4rem;
+
+    @include respond(tab-land){
+        text-align: center;
+        padding: 2rem 0 0;
+    
+    }
+}
+
+.article-paragraph{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $color-grayish-blue;
+    padding: 1rem 2.3rem 1rem 0;
+
+    &--space{
+        @include respond(tab-land){
+            padding: 0;
+        }
+    }
+
+    @include respond(tab-land){
+        padding: 1.5rem 1rem 0 0;
+    
+    }
+}
+
+.article h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: $color-dark-blue;
+    padding: 1rem 2rem 1rem 0;
+}

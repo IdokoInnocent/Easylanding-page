@@ -1,0 +1,213 @@
+// Text section-----
+
+.text{
+    background-image: url(..images/bg-intro-desktop.svg);
+    background-size: 70% 95%;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-position: 150% 20%;
+
+    
+
+    @include respond(phone){
+        padding-bottom: 8rem;
+       
+
+    }
+ 
+    
+
+    &__col-1{
+        flex-basis: 48%;
+        padding: 5rem 0rem 3rem 12rem;
+
+        @include respond(tab-land){
+
+            padding: 2rem 1rem 2rem 2rem;
+            text-align: center;    
+        }
+
+        
+
+    }
+
+    &__col-2{
+        flex-basis: 48%;
+        margin-right: -14rem;
+        margin-top: -8vh;
+
+        background: url("../images/bg-intro-mobile.svg");
+        background-size: cover;
+        background-repeat: repeat-x;
+        background-position: center;
+
+
+        
+    
+
+        @include respond(tab-land){
+            margin-top: -10vh;
+            margin-right: 0;
+        
+            
+        }
+
+        img{
+            width: 100%;
+        }
+
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(tab-land){
+            flex-direction: column-reverse;
+        }
+
+        
+    }
+}
+
+.choose{
+    padding: 1rem 0 5rem 10rem;
+    width: 100%;
+    background-color: $color-light-blue;
+
+    @include respond(phone){
+        padding: 0;
+    }
+
+
+
+    .img-container{
+        padding-top: 5rem;
+
+        @include respond(tab-land){
+            text-align: center;
+        }
+    }
+
+    
+
+    @include respond(tab-land){
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+
+    h1{
+        @extend .text-header;
+        text-transform: capitalize;
+        font-size: 3rem;
+
+        @include respond(tab-land){
+            text-align: center;
+            padding-bottom: 2.6rem;
+        }
+    }
+
+    .row-2{
+        display: flex;
+
+        @include respond(tab-land){
+            flex-direction: column;
+
+        
+        }
+
+
+        col{
+            flex-basis: 30%;
+            padding: 2.5rem 0 1rem;
+
+            @include respond(tab-land){
+                padding: 2px 1px;
+            }
+
+        }
+
+        h2{
+            font-size: 3rem;
+            font-weight: 300;
+            text-transform: capitalize;
+            color: $color-dark-blue;
+            padding: 2.5rem 0 3rem 0;
+
+            @include respond(tab-land){
+                text-align: center;
+            }
+            
+        }
+
+       
+    }
+}
+
+
+/// article----section
+
+.article{
+    padding: 8rem 15rem 10rem 15rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    @include respond(tab-land){
+        padding: 5rem 6rem 0 5rem;
+    
+    }
+
+    @include respond(phone){
+        padding: 5rem 2.5rem 0 0;
+    }
+
+    h1{
+        font-size: 3.5rem;
+        padding-bottom: 7rem;
+        font-weight: 500;
+        text-align: center;
+
+        @include respond(phone){
+            padding-bottom: 3rem;
+            font-size: 4rem;
+        }
+
+    }
+}
+
+.row-3{
+    display: flex;
+
+    @include respond(tab-land){
+        flex-direction: column;
+    
+    }
+}
+
+.col-article{
+    flex-basis: 32%;
+    margin: 0 0 0 2rem;
+    margin-bottom: 5%;
+
+    /*:not(:first-child){
+        margin-left: 2rem;
+    }*/
+
+
+    &__photo{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+
+        @include respond(tab-land){
+            width: 100%;
+            margin-top: 4rem;
+        }
+    }
+}
+
+
+
+
+
